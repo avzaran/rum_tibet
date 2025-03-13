@@ -164,34 +164,35 @@
 
 .about-tour{
     display: flex;
+    min-height: 771px;
     justify-content: center;
-    position: relative;
-    top: 100px;
+    align-items: center;
     .about-tour__card{
         width: 1180px;
-        height: 526px;
         display: flex;
+        
+        
+        
         gap: 100px;
     }
     .about-tour__title{
         display: flex;
         justify-content: center;
-        align-items: center;
+        width: 580px;
     }
     .about-tour__subtitle{
         margin-top: 50px;
     }
 }
 .about-tour__video{
-    width: 480px;
-    height: 526px;
-    position: relative;
+   position: relative;
+   width: 480px;
+   height: 526px;
+    
     .about-tour__pic{
         width: 350px;
-        height: 400px;
-        position: absolute;
-        top: 0;
-        right: 100%;
+        height: auto;
+       
     }
     .about-tour__video-card{
         width: 350px;

@@ -281,15 +281,16 @@ th {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 771px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
-  top: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .about-tour .about-tour__card {
   width: 1180px;
-  height: 526px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,25 +303,20 @@ th {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 580px;
 }
 .about-tour .about-tour__subtitle {
   margin-top: 50px;
 }
 
 .about-tour__video {
+  position: relative;
   width: 480px;
   height: 526px;
-  position: relative;
 }
 .about-tour__video .about-tour__pic {
   width: 350px;
-  height: 400px;
-  position: absolute;
-  top: 0;
-  right: 100%;
+  height: auto;
 }
 .about-tour__video .about-tour__video-card {
   width: 350px;
