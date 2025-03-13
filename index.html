@@ -4,30 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rum Tibet</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
 </head>
 <body>
      <header>
-         <div class="header__card">     <!--общий див для хидера-->
+         <div class="header__card" >     <!--общий див для хидера-->
             <div class="header__nav">   <!--общая див для навигации-->
                 <div class="header__logo"></div> <!--лого-->
                 <div class="header__buttons"> <!--контейнер для навигационных кнопок-->
-                    <button class="header__button1"></button>
-                    <button class="header__button2"></button>
-                    <button class="header__button3"></button>
-                    <button class="header__button4"></button>
-                    <button class="header__button5"></button>
-                    <button class="header__button6"></button>
-                    <button class="header__button7"></button>
+                    <button class="header__button1">Главная</button>
+                    <button class="header__button2">Про гида</button>
+                    <button class="header__button3">Программа тура</button>
+                    <button class="header__button4">Стоимость</button>
+                    <button class="header__button5">Блог</button>
+                    <button class="header__button6">Контакты</button>
+                    <button class="header__button7">Консультация</button>
                 </div>
             </div>
 
-            <div class="header__title"></div> <!--основной приветсвенный текст-->
+            <div class="header__title">Насладись прогулкой в горах <br>с командой единомышленников</div> <!--основной приветсвенный текст-->
 
             <div class="header__subcard"> <!--контейнер для форм заполнения по поиску программы-->
-
+                <form action="#" method="post" class="tour-select">
+                    <div class="location">
+                        <label for="location_select">выберите из списка</label>
+                        <select name="location" id="location_select">
+                            <option value="">Локация для тура</option>
+                            <option value="kazenoy">Казеной</option>
+                            <option value="vedeno">Ведено</option>
+                            <option value="benoy">Беной</option>
+                        </select>
+                    </div>
+                    <div class="date">
+                        <label for="date">укажите диапазон</label>
+                        <input type="date" id="date">
+                    </div>
+                    <div class="quantity">
+                        <label for="quantity">минимум 4 человека</label>
+                        <select name="quantity" id="quantity">
+                            <option value="">Участники</option>
+                            <option value="four">4 человека</option>
+                            <option value="five">5 человек</option>
+                            <option value="six">6 человек</option>
+                            <option value="seven">7 человек</option>
+                            <option value="eight">8 человек</option>
+                            <option value="nine">9 человек</option>
+                            <option value="ten">10 человек</option>
+                        </select>
+                    </div>
+                    <div class="tour-select__button">
+                        <button id="tour-button">Найти программу</button>
+                    </div>
+                </form>
             </div>
          </div>
      </header>
+     <main>
+        <section class="about-tour">
+            <div class="about-tour__card">
+                <div class="about-tour__video">
+                    <img class="about-tour__pic" src="/img/Rectangle5.png" alt="montauns">
+                    <iframe class="about-tour__video-card" width="1222222222222222222222222350" height="400" src="https://www.youtube.com/embed/0pIyIMqwu0E?si=5upJ0FlXVJGO93cf"
+                       poster="/img/Rectangle 4.png" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="about-tour__title">
+                    <div class="about-tour__subtitle">
+                        <p>о нашем походе</p>
+                        <p>Исследуйте все горные массивы мира вместе с нами</p>
+                        <p>Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард
+                        МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum,
+                        "consectetur"и занялся его поисками в классической латинской литературе.</p>
+                        <button class="about-tour__button">Программа тура</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+     </main>
 </body>
 </html>
