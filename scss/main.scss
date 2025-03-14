@@ -201,5 +201,32 @@
         bottom: 0;
         right: 0;
     }
+    
 }
 
+.about-tour__subtitle{
+    .about-tour_1 {
+        font-size: 24px;
+        font-weight: 400;
+        color: #F2BE22;
+    }
+    .about-tour_2{
+        font-size: 32px;
+    }
+    .about-tour_3{
+        font-size: 18px;
+        line-height: 150%;
+        font-weight: 400;
+    }
+    .about-tour__button{
+        width: 200px;
+        height: 52px;
+        border: none;
+        padding: 5px;
+        position: relative;
+        top: 30px;
+        background-color: #1A3E3E;
+        color: #FDFDFD;
+        font-size: 16px;
+    }
+}
