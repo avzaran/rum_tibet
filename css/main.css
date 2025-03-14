@@ -90,8 +90,7 @@ th {
 }
 
 .header__card {
-  width: 1920px;
-  height: 985px;
+  height: 100vh;
   background-image: url(/img/Rectangle1.png);
   background-size: cover;
   background-position: center;
@@ -107,6 +106,16 @@ th {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.header__title-card {
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header__logo {
@@ -188,9 +197,6 @@ th {
   width: 1080px;
   height: 150px;
   text-align: left;
-  position: absolute;
-  top: 551px;
-  left: 370px;
   font-family: next-art-reg;
   font-weight: 900;
   font-size: 50px;
@@ -281,7 +287,7 @@ th {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 771px;
+  min-height: 100vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -326,20 +332,20 @@ th {
   right: 0;
 }
 
-.about-tour__subtitle .about-tour_1 {
+.about-tour__subtitle .about-tour_1, .about-tour__subtitle .offers-tour_1, .offers__subtitle .about-tour_1, .offers__subtitle .offers-tour_1 {
   font-size: 24px;
   font-weight: 400;
   color: #F2BE22;
 }
-.about-tour__subtitle .about-tour_2 {
+.about-tour__subtitle .about-tour_2, .about-tour__subtitle .offers-tour_2, .offers__subtitle .about-tour_2, .offers__subtitle .offers-tour_2 {
   font-size: 32px;
 }
-.about-tour__subtitle .about-tour_3 {
+.about-tour__subtitle .about-tour_3, .about-tour__subtitle .offers-tour_3, .offers__subtitle .about-tour_3, .offers__subtitle .offers-tour_3 {
   font-size: 18px;
   line-height: 150%;
   font-weight: 400;
 }
-.about-tour__subtitle .about-tour__button {
+.about-tour__subtitle .about-tour__button, .about-tour__subtitle .offers__button, .offers__subtitle .about-tour__button, .offers__subtitle .offers__button {
   width: 200px;
   height: 52px;
   border: none;
@@ -349,4 +355,90 @@ th {
   background-color: #1A3E3E;
   color: #FDFDFD;
   font-size: 16px;
+}
+
+.play-button {
+  position: absolute;
+  top: 65%;
+  left: 65%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: rgba(253, 253, 253, 0.6);
+  padding: 15px 20px;
+  border-radius: 50%;
+  font-size: 24px;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.offers {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+.offers .offers__subtitle {
+  width: 580px;
+}
+
+.offers__gid, .offers__security, .offers__cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+.offers__option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  position: relative;
+  top: 20px;
+}
+
+.offers__pic-card {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.offers__sub-gid .offers__sub-security .offers__sub-cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.offers_pic {
+  width: 50px;
+  height: 50px;
+}
+
+.offers_1 {
+  font-family: Nunito Sans;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 1.2%;
+}
+
+.offers_2 {
+  font-family: Nunito Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
 }

@@ -19,8 +19,8 @@
 }
 
 .header__card{
-    width: 1920px;
-    height: 985px;
+    
+    height: 100vh;
     background-image: url(/img/Rectangle1.png);
     background-size: cover;
     background-position: center;
@@ -31,7 +31,11 @@
     justify-content: space-between;
     
 }
-
+.header__title-card{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
 .header__logo{
     background-image: url(/img/logo.svg);
     width: 137px;
@@ -96,9 +100,7 @@
     width: 1080px;
     height: 150px;
     text-align: left;
-    position: absolute;
-    top: 551px;
-    left: 370px;
+    
     font-family: next-art-reg;
     font-weight: 900;
     font-size: 50px;
@@ -164,7 +166,8 @@
 
 .about-tour{
     display: flex;
-    min-height: 771px;
+    
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
     .about-tour__card{
@@ -204,21 +207,21 @@
     
 }
 
-.about-tour__subtitle{
-    .about-tour_1 {
+.about-tour__subtitle, .offers__subtitle {
+    .about-tour_1, .offers-tour_1{
         font-size: 24px;
         font-weight: 400;
         color: #F2BE22;
     }
-    .about-tour_2{
+    .about-tour_2, .offers-tour_2{
         font-size: 32px;
     }
-    .about-tour_3{
+    .about-tour_3, .offers-tour_3{
         font-size: 18px;
         line-height: 150%;
         font-weight: 400;
     }
-    .about-tour__button{
+    .about-tour__button, .offers__button{
         width: 200px;
         height: 52px;
         border: none;
@@ -229,4 +232,71 @@
         color: #FDFDFD;
         font-size: 16px;
     }
+}
+.play-button {
+    position: absolute;
+    top: 65%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    background: rgba(253, 253, 253, 0.6);
+    padding: 15px 20px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.offers{
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    .offers__subtitle{
+        width: 580px;
+    }
+}
+.offers__gid, .offers__security, .offers__cost  {
+    display: flex;
+    gap: 15px;
+    
+}
+.offers__option{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    top: 20px;
+}
+.offers__pic-card{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.offers__sub-gid .offers__sub-security .offers__sub-cost {
+    display: flex;
+}
+.offers_pic{
+    width: 50px;
+    height: 50px;
+}
+
+.offers_1{
+font-family: Nunito Sans;
+font-weight: 700;
+font-size: 18px;
+line-height: 20px;
+letter-spacing: 1.2%;
+}
+
+.offers_2{
+    font-family: Nunito Sans;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0%;
 }
