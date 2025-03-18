@@ -221,13 +221,11 @@
         line-height: 150%;
         font-weight: 400;
     }
-    .about-tour__button, .offers__button, .popular__button{
+    .about-tour__button, .offers__button, .popular__button, .blog__button{
         width: 200px;
         height: 52px;
         border: none;
         padding: 5px;
-        position: relative;
-        top: 30px;
         background-color: #1A3E3E;
         color: #FDFDFD;
         font-size: 16px;
@@ -257,8 +255,13 @@
     gap: 50px;
     .offers__subtitle{
         width: 580px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
     }
 }
+
+
 .offers__gid, .offers__security, .offers__cost  {
     display: flex;
     gap: 15px;
@@ -275,8 +278,14 @@
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    >img{
+        transition: all 0.5s ease;
+    }
 }
 
+.offers__pic-card>img:hover{
+    scale: 1.05;  
+}
 .offers__sub-gid .offers__sub-security .offers__sub-cost {
     display: flex;
 }
@@ -306,7 +315,11 @@ letter-spacing: 1.2%;
     justify-content: center;
     padding-top: 30px;
 }
-
+.popular__card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
 .popular__title {
     display: flex;
@@ -391,10 +404,11 @@ letter-spacing: 1.2%;
         border-radius: 10px;
 }
 
-.popular__button-card{
+.popular__button-card, .blog__button-card{
     display: flex;
     justify-content: center;
     margin-bottom: 35px;
+    
 }
 
 .blog{
@@ -404,6 +418,7 @@ letter-spacing: 1.2%;
     margin-top: 25px;
     padding-top: 25px;
     background-color: #F3F5F4;
+    gap: 20px;
     
 }
 .blog__title {
@@ -448,6 +463,7 @@ letter-spacing: 1.2%;
     font-size: 24px;
     line-height: 32px;
     letter-spacing: 0%;
+    transition: all .3s ease;
 }
 .item-title1:hover{
     text-decoration: underline 2px;

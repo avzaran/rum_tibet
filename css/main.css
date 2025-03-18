@@ -345,13 +345,11 @@ th {
   line-height: 150%;
   font-weight: 400;
 }
-.about-tour__subtitle .about-tour__button, .about-tour__subtitle .offers__button, .about-tour__subtitle .popular__button, .offers__subtitle .about-tour__button, .offers__subtitle .offers__button, .offers__subtitle .popular__button, .popular .about-tour__button, .popular .offers__button, .popular .popular__button, .blog .about-tour__button, .blog .offers__button, .blog .popular__button {
+.about-tour__subtitle .about-tour__button, .about-tour__subtitle .offers__button, .about-tour__subtitle .popular__button, .about-tour__subtitle .blog__button, .offers__subtitle .about-tour__button, .offers__subtitle .offers__button, .offers__subtitle .popular__button, .offers__subtitle .blog__button, .popular .about-tour__button, .popular .offers__button, .popular .popular__button, .popular .blog__button, .blog .about-tour__button, .blog .offers__button, .blog .popular__button, .blog .blog__button {
   width: 200px;
   height: 52px;
   border: none;
   padding: 5px;
-  position: relative;
-  top: 30px;
   background-color: #1A3E3E;
   color: #FDFDFD;
   font-size: 16px;
@@ -389,6 +387,14 @@ th {
 }
 .offers .offers__subtitle {
   width: 580px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
 }
 
 .offers__gid, .offers__security, .offers__cost {
@@ -415,6 +421,14 @@ th {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+}
+.offers__pic-card > img {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.offers__pic-card > img:hover {
+  scale: 1.05;
 }
 
 .offers__sub-gid .offers__sub-security .offers__sub-cost {
@@ -452,6 +466,17 @@ th {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 30px;
+}
+
+.popular__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
 }
 
 .popular__title {
@@ -571,7 +596,7 @@ th {
   border-radius: 10px;
 }
 
-.popular__button-card {
+.popular__button-card, .blog__button-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -595,6 +620,7 @@ th {
   margin-top: 25px;
   padding-top: 25px;
   background-color: #F3F5F4;
+  gap: 20px;
 }
 
 .blog__title {
@@ -658,6 +684,8 @@ th {
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .item-title1:hover {
