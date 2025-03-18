@@ -332,20 +332,20 @@ th {
   right: 0;
 }
 
-.about-tour__subtitle .about-tour_1, .about-tour__subtitle .offers-tour_1, .offers__subtitle .about-tour_1, .offers__subtitle .offers-tour_1 {
+.about-tour__subtitle .about-tour_1, .about-tour__subtitle .offers-tour_1, .about-tour__subtitle .popular__title1, .about-tour__subtitle .blog__title1, .offers__subtitle .about-tour_1, .offers__subtitle .offers-tour_1, .offers__subtitle .popular__title1, .offers__subtitle .blog__title1, .popular .about-tour_1, .popular .offers-tour_1, .popular .popular__title1, .popular .blog__title1, .blog .about-tour_1, .blog .offers-tour_1, .blog .popular__title1, .blog .blog__title1 {
   font-size: 24px;
   font-weight: 400;
   color: #F2BE22;
 }
-.about-tour__subtitle .about-tour_2, .about-tour__subtitle .offers-tour_2, .offers__subtitle .about-tour_2, .offers__subtitle .offers-tour_2 {
+.about-tour__subtitle .about-tour_2, .about-tour__subtitle .offers-tour_2, .about-tour__subtitle .popular__title2, .about-tour__subtitle .blog__title2, .offers__subtitle .about-tour_2, .offers__subtitle .offers-tour_2, .offers__subtitle .popular__title2, .offers__subtitle .blog__title2, .popular .about-tour_2, .popular .offers-tour_2, .popular .popular__title2, .popular .blog__title2, .blog .about-tour_2, .blog .offers-tour_2, .blog .popular__title2, .blog .blog__title2 {
   font-size: 32px;
 }
-.about-tour__subtitle .about-tour_3, .about-tour__subtitle .offers-tour_3, .offers__subtitle .about-tour_3, .offers__subtitle .offers-tour_3 {
+.about-tour__subtitle .about-tour_3, .about-tour__subtitle .offers-tour_3, .offers__subtitle .about-tour_3, .offers__subtitle .offers-tour_3, .popular .about-tour_3, .popular .offers-tour_3, .blog .about-tour_3, .blog .offers-tour_3 {
   font-size: 18px;
   line-height: 150%;
   font-weight: 400;
 }
-.about-tour__subtitle .about-tour__button, .about-tour__subtitle .offers__button, .offers__subtitle .about-tour__button, .offers__subtitle .offers__button {
+.about-tour__subtitle .about-tour__button, .about-tour__subtitle .offers__button, .about-tour__subtitle .popular__button, .offers__subtitle .about-tour__button, .offers__subtitle .offers__button, .offers__subtitle .popular__button, .popular .about-tour__button, .popular .offers__button, .popular .popular__button, .blog .about-tour__button, .blog .offers__button, .blog .popular__button {
   width: 200px;
   height: 52px;
   border: none;
@@ -374,6 +374,7 @@ th {
 }
 
 .offers {
+  background-color: #F3F5F4;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -438,6 +439,261 @@ th {
 .offers_2 {
   font-family: Nunito Sans;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+
+.popular {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 30px;
+}
+
+.popular__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 35px;
+}
+
+.star {
+  position: absolute;
+  top: 5%;
+  text-align: center;
+  right: 0;
+  width: 65px;
+  height: 32px;
+  background-color: rgba(43, 41, 41, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  color: #FDFDFD;
+}
+.star > img {
+  background-color: #F2BE22;
+  border-radius: 50%;
+}
+
+.popular__direction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.popular__direction-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.popular__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 380px;
+  height: 90px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  background-color: rgba(43, 41, 41, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  color: #FDFDFD;
+}
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: Nunito Sans;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  -webkit-transition: scale ease 0.4s;
+  transition: scale ease 0.4s;
+}
+.description > span {
+  font-family: Nunito Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0%;
+}
+
+.description:hover {
+  scale: 1.2;
+}
+
+.price {
+  width: 86px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(43, 41, 41, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  color: #cecece;
+  border-radius: 10px;
+}
+
+.popular__button-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 35px;
+}
+
+.blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 25px;
+  padding-top: 25px;
+  background-color: #F3F5F4;
+}
+
+.blog__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blog__card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  padding-top: 20px;
+}
+
+.blog__item {
+  width: 580px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+.blog__item > img {
+  border-radius: 13px;
+}
+
+.blog__item:hover {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  scale: 1.02;
+  background-color: #FDFDFD;
+}
+
+.blog__item-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.item-title1 {
+  font-family: Nunito Sans;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0%;
+}
+
+.item-title1:hover {
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
+}
+
+.item-title2 {
+  font-family: Nunito Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+
+.item-title3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.item-subtitle1 {
+  font-family: Nunito Sans;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #F2BE22;
+}
+
+.item-subtitle2 {
+  font-family: Nunito Sans;
+  font-weight: 700;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0%;

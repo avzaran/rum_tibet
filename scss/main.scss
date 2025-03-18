@@ -207,13 +207,13 @@
     
 }
 
-.about-tour__subtitle, .offers__subtitle {
-    .about-tour_1, .offers-tour_1{
+.about-tour__subtitle, .offers__subtitle, .popular, .blog{
+    .about-tour_1, .offers-tour_1, .popular__title1, .blog__title1{
         font-size: 24px;
         font-weight: 400;
         color: #F2BE22;
     }
-    .about-tour_2, .offers-tour_2{
+    .about-tour_2, .offers-tour_2, .popular__title2, .blog__title2{
         font-size: 32px;
     }
     .about-tour_3, .offers-tour_3{
@@ -221,7 +221,7 @@
         line-height: 150%;
         font-weight: 400;
     }
-    .about-tour__button, .offers__button{
+    .about-tour__button, .offers__button, .popular__button{
         width: 200px;
         height: 52px;
         border: none;
@@ -249,7 +249,7 @@
 
 
 .offers{
-    
+    background-color: #F3F5F4;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -299,4 +299,186 @@ letter-spacing: 1.2%;
         font-size: 14px;
         line-height: 20px;
         letter-spacing: 0%;
+}
+
+.popular {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+
+.popular__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 35px;
+}
+
+.star{
+    position: absolute;
+    top: 5%;
+    text-align: center;
+    right: 0;
+    width: 65px;
+    height: 32px;
+    background-color: rgba(43, 41, 41, 0.2);
+    backdrop-filter: blur(5px);
+    color: #FDFDFD;
+    >img{
+        background-color: #F2BE22;
+        border-radius: 50%;
+    }
+}
+
+.popular__direction {
+    display: flex;
+    gap: 30px;
+}
+
+.popular__direction-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+.popular__description {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 380px;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgba(43, 41, 41, 0.2);
+        backdrop-filter: blur(5px);
+        color: #FDFDFD;
+}
+
+
+.description {
+    display: flex;
+    flex-direction: column;
+    font-family: Nunito Sans;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: 0%;
+        >span{
+            font-family: Nunito Sans;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 18px;
+                letter-spacing: 0%;
+        }
+    transition: scale ease 0.4s;
+}
+.description:hover{
+    scale: 1.2;
+}
+
+.price {
+    width: 86px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(43, 41, 41, 0.2);
+        backdrop-filter: blur(10px);
+        color: #cecece;
+        border-radius: 10px;
+}
+
+.popular__button-card{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    padding-top: 25px;
+    background-color: #F3F5F4;
+    
+}
+.blog__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog__card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+.blog__item {
+    width: 580px;
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    >img {
+            border-radius: 13px;
+        }
+    transition: all ease 0.5s;
+}
+.blog__item:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    scale: 1.02;
+    background-color: #FDFDFD;
+}
+
+.blog__item-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-title1 {
+    font-family: Nunito Sans;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0%;
+}
+.item-title1:hover{
+    text-decoration: underline 2px;
+}
+
+.item-title2 {
+    font-family: Nunito Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+}
+
+.item-title3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-subtitle1 {
+    font-family: Nunito Sans;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #F2BE22;
+}
+
+.item-subtitle2 {
+    font-family: Nunito Sans;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
 }
