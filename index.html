@@ -12,6 +12,7 @@
         rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
         <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+        <script src="/js/lightbox.js" defer></script>
 </head>
 <body>
      <header>
@@ -215,15 +216,64 @@
                 <p class="report__title2">Блог о путешествиях</p>
             </div>
             <div class="report__photo-grid">
-                <img src="img/Rectangle 20.png" alt="">
-                <img src="img/Rectangle 21.png" alt="">
-                <img src="img/Rectangle 22.png" alt="">
-                <img src="img/Rectangle 23.png" alt="">
-                <img src="img/Rectangle 24.png" alt="">
-                <img src="img/Rectangle 25.png" alt="">
+                <img src="img/Rectangle 20.png" class="img1" alt="Каппадокия">
+                <img src="img/Rectangle 21.png" class="img2" alt="карта и фотоаппарат">
+                <img src="img/Rectangle 22.png" class="img3" alt="отель Парус">
+                <img src="img/Rectangle 24.png" class="img4" alt="пляж">
+                <img src="img/Rectangle 23.png" class="img5" alt="каньон">
+                <img src="img/Rectangle 25.png" class="img6" alt="дневник">
             </div>
-            <div class="blog__button-card"><button class="blog__button">Другие материалы</button></div>
+            <div class="report__button-card"><button class="report__button">Наш pinterest</button></div>
+        </section>
+
+        <section class="actual">
+            <div class="actual__title">
+                <p class="actual__title1">актуально</p>
+                <p class="actual__title2">Получайте полезные рассылки о путешествиях</p>
+            </div>
+            <div class="actual__form">
+                <div class="actual__form1">
+                    <form action="#" method="post" class="actual__email-card">
+                        <label for="email">Введите e-mail адрес</label>
+                        <div class="actual__email">
+                            <input type="email" id="email" required class="action__input" placeholder="example@email.ru">
+                            <button class="actual__button">Подписаться на новости</button>
+                        </div>
+                    </form>
+                    
+                </div>
+                <div class="actual__subtitle">подписываясь на новости, вы автоматически соглашаетесь <a href="#">с условиями обработки персональных данных</a> и <a href="#">правилами рекламных
+                рассылок</a></div>
+            </div>
         </section>
      </main>
+     <footer>
+        <div class="footer__card">
+            <div class="footer__about">
+                <p class="footer__title1">Компания «РумТибет»</p>
+                <p class="footer__title2">Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард
+                МакКлинток, профессор латыни из колледжа Hampden-Sydney.</p>
+            </div>
+            <div class="footer__option">
+                <p class="footer__option-common">Наши услуги</p>
+                <p >
+                    <ul class="footer__sub-option">
+                        <li><a href="#">Посещение храмов в горах</a></li>
+                        <li><a href="#">Походы в джунглях Амазонии</a> <span class="new">NEW</span></li>
+                        <li><a href="#">Поездка в Африку</a></li>
+                    </ul>
+                </p>
+            </div>
+            <div class="footer__important">
+                <p class="footer__important-common">Важно для путешествий</p>
+                <p >
+                <ul class="footer__sub-important">
+                    <li><a href="#">Как собрать в долгий поход?</a></li>
+                    <li><a href="#">Если вы врач - загляните сюда</a></li>
+                </ul>
+                </p>
+            </div>
+        </div>
+     </footer>
 </body>
 </html>
