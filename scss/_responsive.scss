@@ -1,8 +1,21 @@
-@mixin sm {
-    @media screen and (min-width: 640px) {
-        @content
+
+    @media (max-width: 640px) {
+        .header__buttons {
+                display: none;
+            }
+        .header__title{
+            font-size: 5px !important;
+        }    
+        .header__subcard{
+            display: none !important;
+        }
+        .about-tour{
+            display: none !important;
+        }
     }
-}
+
+
+
 
 @mixin md {
     @media screen and (min-width: 768px) {
