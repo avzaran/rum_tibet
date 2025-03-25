@@ -20,6 +20,3 @@ lightbox.addEventListener('click', e =>{
     lightbox.classList.remove('active')
 })
 
-
-
-Fancybox.bind("[data-fancybox]", {});

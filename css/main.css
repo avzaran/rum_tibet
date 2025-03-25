@@ -79,16 +79,170 @@ th {
 
 @media (max-width: 640px) {
   .header__buttons {
-    display: none;
+    display: none !important;
   }
   .header__title {
-    font-size: 5px !important;
+    font-family: NEXT ART;
+    font-weight: 700 !important;
+    font-size: 28px !important;
+    line-height: 150% !important;
+    letter-spacing: 0%;
   }
-  .header__subcard {
+  .header__subcard > form div:nth-last-child(n+2) {
     display: none !important;
+  }
+  .header__subcard > form {
+    background-color: unset !important;
+    -webkit-backdrop-filter: unset !important;
+            backdrop-filter: unset !important;
+  }
+  .header__nav {
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+  }
+  .header__nav > .header__logo {
+    width: 84px !important;
+    height: 44px !important;
+    background-size: cover !important;
+  }
+  .header__card {
+    height: 70vh !important;
   }
   .about-tour {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .about-tour__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-tour__pic {
     display: none !important;
+  }
+  .about-tour__video-card {
+    position: relative !important;
+  }
+  .about-tour__title {
+    width: 350px !important;
+  }
+  .about-tour__button {
+    position: relative;
+    top: 20px;
+  }
+  .play-button {
+    position: absolute;
+    top: 40% !important;
+    left: 50% !important;
+  }
+  .header__pop-up {
+    display: block !important;
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-transform: translate(90%) !important;
+        -ms-transform: translate(90%) !important;
+            transform: translate(90%) !important;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    z-index: 0 !important;
+  }
+  .header__pop-up-button:hover ~ .header__pop-up > div {
+    -webkit-transform: translate(0%) !important;
+        -ms-transform: translate(0%) !important;
+            transform: translate(0%) !important;
+  }
+  .header__pop-up-button {
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    width: 30px !important;
+    height: 30px !important;
+    z-index: 15 !important;
+  }
+  .offers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .offers__pic-card img {
+    display: none;
+  }
+  .offers__subtitle {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    width: 100vw !important;
+  }
+  .offers__subtitle .offers-tour_1 {
+    font-family: Nunito Sans;
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 20px;
+    letter-spacing: 0%;
+  }
+  .offers__subtitle .offers-tour_2 {
+    font-family: Nunito Sans;
+    font-weight: 800;
+    font-size: 24px !important;
+    line-height: 120%;
+    letter-spacing: 0%;
+  }
+  .offers__subtitle .offers-tour_3 {
+    font-family: Nunito Sans;
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 150%;
+    letter-spacing: 0%;
+  }
+  .offers__subtitle h4 {
+    font-family: Nunito Sans;
+    font-weight: 700;
+    font-size: 18px !important;
+    line-height: 20px;
+    letter-spacing: 1.2%;
+  }
+  .offers__subtitle .offers__option p {
+    font-family: Nunito Sans;
+    font-weight: 400;
+    font-size: 14px !important;
+    line-height: 20px;
+    letter-spacing: 0%;
+  }
+  .offers__button {
+    display: none;
+  }
+  .offers__button-mob {
+    width: 200px;
+    height: 52px;
+    border: none;
+    padding: 5px;
+    background-color: #1A3E3E;
+    color: #FDFDFD;
+    font-size: 16px;
+    display: block !important;
   }
 }
 #lightbox {
@@ -437,6 +591,10 @@ th {
   color: black;
   cursor: pointer;
   text-decoration: none;
+}
+
+.offers__button-mob {
+  display: none;
 }
 
 .offers {
@@ -1120,4 +1278,34 @@ footer {
 .footer__card li {
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.header__pop-up {
+  width: 70vw;
+  height: 70vh;
+  display: none;
+}
+
+.header__pop-up div {
+  width: 50vw;
+  height: 60vh;
+}
+
+.header__pop-up ul li a {
+  font-family: Nunito Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-decoration: none;
+  color: #FDFDFD;
+}
+
+.header__pop-up ul li a::before {
+  content: "❯";
+  padding: 5px;
+}
+
+.header__pop-up-button {
+  background-image: url(/img/heroicons-solid_menu-alt-3.png);
 }
