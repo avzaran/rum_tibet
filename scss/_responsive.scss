@@ -1,5 +1,8 @@
 
     @media (max-width: 640px) {
+        html{
+            width: 100vw;
+        }
         .header__buttons {
                 display: none !important;
             }
@@ -100,7 +103,9 @@
         ///
         
         .offers{
-            display: flex;
+            display: flex !important;
+            justify-content: center !important;
+        
 
         }
         .offers__pic-card img{
@@ -109,7 +114,7 @@
         .offers__subtitle{
             display: flex !important;
             justify-content: center !important;
-            width: 100vw !important;
+            
             .offers-tour_1{
                 font-family: Nunito Sans;
                 font-weight: 400;
@@ -161,6 +166,163 @@
             font-size: 16px;
             display: block !important;
         }
+
+        ///
+        /// 
+        
+        .popular{
+            width: 100vw !important;
+        }
+
+        .swiper {
+            width: 600px;
+            height: 300px;
+        }
+
+
+
+        ///
+        
+        .actual{
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            width: 358px !important;
+            position: relative !important;
+            top: 0px !important;
+        }
+        .actual__title{
+            width: 80% !important;
+        }
+        .actual__form{
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            width: 100% !important;
+        }
+        .actual__form1{
+            display: flex !important;
+            flex-direction: column !important;
+        }
+        .actual__email-card{
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center;
+            width: 100% !important;
+        }
+        .actual__email{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            width: 100% !important;
+        }
+        .actual__email{
+            width: 80% !important;
+        }
+        .actual__subtitle{
+            width: 80% !important;
+        }
+
+        ///
+        /// 
+        footer{
+            min-height: 900px !important;
+            align-items: start !important;
+        }
+        .footer__card{
+            flex-direction: column !important;
+            align-items: center !important;
+            min-height: 120% !important;
+            padding-top: 50px !important;
+        }
+        .footer__about{
+            width: 70% !important;
+            align-items: center !important;
+        }
+
+        .report__gallery-wrapper{
+            position: relative !important;
+                overflow: hidden !important;
+                width: 100% !important;
+        }
+        .report__photo-grid{
+            display: flex !important;
+                gap: 10px;
+                scroll-snap-type: x mandatory !important;
+                overflow-x: auto !important;
+        }
+        .report__photo-grid div {
+                flex: 0 0 auto !important;
+                scroll-snap-align: start !important;
+            }
+        .report__photo-grid::-webkit-scrollbar {
+                display: none;
+            }
+        .popular__direction-common {
+            position: relative !important;
+            overflow: hidden !important;
+            width: 100% !important;
+        }
+        .popular__direction{
+            display: flex !important;
+            gap: 10px;
+            scroll-snap-type: x mandatory !important;
+            overflow-x: auto !important;
+        }
+        .popular__direction div{
+            flex: 0 0 auto !important;
+                scroll-snap-align: start !important;
+        }
+        .popular__direction{
+            gap: unset !important;
+        }
+        .popular__direction::-webkit-scrollbar {
+                display: none;
+            }
+        .popular__title{
+            display: flex !important;
+            flex-direction: column !important;
+            >.popular__title1{
+                font-family: Nunito Sans;
+                    font-weight: 400;
+                    font-size: 16px !important;
+                    line-height: 20px;
+                    letter-spacing: 0%;
+            }
+            >.popular__title2{
+                font-family: Nunito Sans;
+                    font-weight: 800;
+                    font-size: 24px !important;
+                    line-height: 120%;
+                    letter-spacing: 0%;
+            }
+        }
+        .blog__card-common{
+            width: 100% !important;
+            position: relative !important;
+            overflow: hidden !important;
+        }
+        .blog__card{
+            display: flex !important;
+            width: 100% !important;
+            scroll-snap-type: x mandatory !important;
+            overflow-x: auto !important;
+        }
+        .blog__item{
+            flex-direction: column;
+            flex-grow: 1 !important;
+            width: 100% !important;
+            >img{
+                width: 100% !important;
+            }
+        }
+        .blog__item-title{
+            width: 100% !important;
+            flex-basis: 1 !important;
+        }
+
     }
 
 
