@@ -782,33 +782,11 @@ footer{
     padding-bottom: 5px;
 }
 
-.header__pop-up{
-    width: 70vw;
-    height: 70vh;
-    display: none;
-}
-.header__pop-up div{
-    width: 50vw;
-    height: 60vh;
-}
-.header__pop-up ul li a{
-    font-family: Nunito Sans;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 0%;
-    text-decoration: none;
-    color: #FDFDFD;
+.sidebar{
+    visibility: hidden;
 }
 
-.header__pop-up ul li a::before{
-    content: '❯';
-    padding: 5px;
-}
 
-.header__pop-up-button{
-    background-image: url(/img/heroicons-solid_menu-alt-3.png);
-}
 
 
 
